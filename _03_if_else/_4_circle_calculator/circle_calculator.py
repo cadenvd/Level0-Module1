@@ -9,9 +9,9 @@ window_width = 600
 window_height = 600
 
 aoc = math.pi
-radius = simpledialog.askstring(title=None, prompt="Give radius of a circle.")
+radius = simpledialog.askinteger(title=None, prompt="Give radius of a circle.")
 # Next, ask the user if they would like to calculate the area or circumference of a circle.
-circumference = simpledialog.askstring(title=None, promt="Would you like to calculate the are or circumference of a circle?")
+circumference = simpledialog.askstring(title=None, promt="Would you like to calculate the area or circumference of a circle?")
 # If they choose area, display the area of the circle using the radius.
 if circumference == "area" or circumference == "Area" or circumference == "AREA":
     tur = turtle.Turtle
@@ -24,7 +24,7 @@ if circumference == "circumference" or circumference == "Circumference" or circu
     tur = turtle.Turtle
     tur.circle(radius)
     Circum = math.pi * radius * 2
-    A = 2 *(math.pi * (radius**2))
+    A = 2 * (math.pi * (radius**2))
 
 #Area = πr^2
 #Circumference = 2πr 
